@@ -125,12 +125,11 @@ const CryptoDetails = () => {
         ))}
       </Select>
 
-      {/* ------------ Line Chart ------------- */}
-
       <LineChart
         coinHistory={coinHistory}
-        currentPrice={millify(cryptoDetails?.price)}
-        coinName={cryptoDetails?.name}
+        currentPrice={millify(cryptoDetails.price)}
+        coinName={cryptoDetails.name}
+        timePeriod={timePeriod}
       />
       <Col className="stats-container">
         <Col className="coin-value-statistics">
